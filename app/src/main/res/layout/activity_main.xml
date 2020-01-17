@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="40dp"
+        android:text="Management System"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter Rollno:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Enter Rollno"
+            android:inputType="number" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Name:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Enter Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Marks:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editMarks"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Enter the Marks"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select male or female:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Qualification:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/edu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Qualification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Date Of Birth:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#d4d4d4"
+            android:hint="Select date....."
+            android:padding="15dp"
+            android:textColor="#897"
+            android:textColorHint="#20BE20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="selectdob"
+            />
+    </GridLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Insert"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/Delete"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/Update"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:text="Modify" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/View"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="View"
+
+                />
+
+            <Button
+                android:id="@+id/ViewAll"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:text="View All" />
+
+            <Button
+                android:id="@+id/Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

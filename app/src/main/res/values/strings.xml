@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Combinationall</string>
+    <string-array name="Qualification">
+        <item>Postgradu</item>
+        <item>Graduation</item>
+        <item>12th</item>
+        <item>10th</item>
+    </string-array>
+</resources>
+
